@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -167,8 +167,8 @@
 <wire x1="68.58" y1="53.975" x2="0" y2="53.975" width="0.4064" layer="20"/>
 <rectangle x1="1.27" y1="59.69" x2="16.51" y2="76.2" layer="29"/>
 <rectangle x1="51.435" y1="59.69" x2="67.945" y2="76.2" layer="29"/>
-<text x="14.605" y="7.62" size="1.016" layer="25" font="vector" rot="R90">SHAPESETTING BOARD V2.0
-MEDLAB 7/2018 ME</text>
+<text x="14.605" y="7.62" size="0.8128" layer="25" font="vector" rot="R90">SHAPESETTING BOARD V3.0
+MEDLAB 03/2023 Max Emerson</text>
 </plain>
 <libraries>
 <library name="texas_parts">
@@ -3297,18 +3297,30 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="NAME" x="23.5712" y="11.3538" size="1.27" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="24.13" y="11.43" size="1.27" layer="27"/>
 </element>
-<element name="U$5" library="texas_parts" package="8SOIC(D)" value="UCC27322" x="60.325" y="40.005"/>
+<element name="U$5" library="texas_parts" package="8SOIC(D)" value="UCC27322" x="60.325" y="40.005" smashed="yes">
+<attribute name="NAME" x="57.15" y="38.1" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="64.77" y="38.1" size="1.27" layer="27" rot="R90"/>
+</element>
 <element name="R7" library="resistor" package="R0603" value="10k" x="59.69" y="33.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="58.674" y="34.036" size="0.8128" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="58.674" y="32.512" size="0.8128" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="C12" library="resistor" package="C0603" value="0.1u" x="60.325" y="37.465" rot="MR180"/>
-<element name="C13" library="resistor" package="C0603" value="0.1u" x="60.325" y="42.545" rot="MR180"/>
+<element name="C12" library="resistor" package="C0603" value="0.1u" x="60.325" y="37.465" smashed="yes" rot="MR180">
+<attribute name="NAME" x="59.436" y="36.703" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="59.436" y="39.497" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="C13" library="resistor" package="C0603" value="0.1u" x="60.325" y="42.545" smashed="yes" rot="MR180">
+<attribute name="NAME" x="59.436" y="41.783" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="59.436" y="44.577" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="JP1" library="pinhead" package="1X01" value="" x="60.325" y="46.355" smashed="yes">
 <attribute name="VALUE" x="59.055" y="43.18" size="1.27" layer="27"/>
 </element>
-<element name="U$6" library="pinheaders_shrouded" package="2X03" value="PINHEAD-2X3" x="17.145" y="40.005" rot="R270"/>
-<element name="U$7" library="sense_resistors" package="5931" value="R5931" x="34.29" y="67.31"/>
+<element name="U$6" library="pinheaders_shrouded" package="2X03" value="PINHEAD-2X3" x="17.145" y="40.005" smashed="yes" rot="R270">
+<attribute name="NAME" x="20.32" y="43.815" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="12.7" y="43.815" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="U$7" library="sense_resistors" package="5931" value="R5931" x="34.29" y="67.31" smashed="yes"/>
 <element name="F1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="200mA" x="44" y="47" smashed="yes" rot="R180">
 <attribute name="NAME" x="44.8216" y="46.1104" size="0.762" layer="25" font="vector" rot="R180"/>
 <attribute name="SPICEPREFIX" value="R" x="44" y="47" size="1.778" layer="27" rot="R180" display="off"/>
